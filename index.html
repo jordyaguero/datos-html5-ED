@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Esta es una página de html5 desde cero de escuela digital">
+    <link rel="icon" href="favicon.png">
+    <title>Document</title>
+
+    <style>
+        p {
+            letter-spacing: .1em;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis labore neque, excepturi nostrum cumque quas maxime incidunt similique minima est molestias quod aperiam dolore iste necessitatibus? Assumenda aperiam inventore, obcaecati.</p>
+    hola<sup>Superindice</sup> hola2<sub>subindice</sub>
+
+    <del>S/.50</del>
+    <!-- <del></del> tacha un texto y significa eliminado -->
+    <p>EStudiar de la <mark>100 a 200</mark></p>
+    <!-- Resalta un texto e indica importancia-->
+
+    <!-- 
+        <code></code : para codigos de programacion
+        <kbd></kbd>  : para atajos de teclado o teclados
+        <pre>        : para preformateado
+        <em></em>    : importancia de texto
+    
+        CITAS:
+
+        <q></q>      : (en linea), coloca x defecto las comillas dobles
+        <blockquote></blockquote>   : (de bloque), coloca un tabulador por defecto
+    
+    -->
+
+    <pre>
+        hola jordy
+        <code>(function()
+        {
+            alert("hola mundito");
+        })();</code>
+    </pre>
+
+    <q>"solo se que nada se"</q>
+    <blockquote>
+        Socrate dijo: "Solo se que nada se"
+    </blockquote>
+
+    <!-- Microdatos 
+
+permite especificar el significado del texto. usando un set de parametros
+especificados en schema.org
+
+se indican con atributos (son 3):
+
+itemscope (indica el contexto, es un atributo booleando o vacio)
+itemtype  (indica el tipo de schema, extraido desde schema.org)
+itemprop  (indica el tipo de dato)
+
+-->
+
+    <article itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" src="hola.png" alt="hola">
+        <h2 itemprop="name">Jordy tirado</h2>
+        <p itemprop="jobTitle">Frontend developers</p>
+        <p itemprop="email">jordy_unt@live.com</p>
+        <p itemprop="address">Gudalupe, La libertad, Peru</p>
+    </article>
+
+    <article>
+        <img src="hola.png" alt="hola">
+        <h2>Jordy tirado</h2>
+        <p>Frontend developers</p>
+        <p>jordy_unt@live.com</p>
+        <p>Gudalupe, La libertad, Peru</p>
+    </article>
+
+</body>
+
+</html>

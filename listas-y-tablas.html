@@ -35,6 +35,10 @@
         th {
             background: peru;
         }
+        
+        .purple {
+            background: purple;
+        }
     </style>
 </head>
 
@@ -215,6 +219,101 @@
             </tr>
         </tbody>
 
+    </table>
+
+    <!-- 
+        <caption></caption>: sirve para dar nombre ala tabla
+        se debe colocar justo despues de la etiqueta <table></table>
+        
+        <colgroup></colgroup>: se utiliza para definir atributos para
+        columnas, dentro de ella deben ir etiquetas <col>
+        que representan a cada columna. usando el atributo span="numero"
+        en <col> se puede referenciar a varias columnas
+    -->
+
+    <table>
+        <caption>Reservados para el EDtaller</caption>
+        <colgroup>
+            <col span="2">
+            <col style="background: red">
+            <col>
+            <col class="purple">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 
+        rowspan: combina varias filas 
+        colspan: combina varias columnas
+        ambos son atributos de la etiqueta <td></td>
+        o <th></th> jamas de <tr></tr>
+    -->
+
+    <table>
+        <tr>
+            <td rowspan="2">a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td colspan="2">b</td>
+        </tr>
     </table>
 </body>
 

@@ -9,6 +9,10 @@
     <title>Listas y tablas</title>
 
     <style>
+        body {
+            margin-bottom: 5em;
+        }
+        
         table {
             border: 1px solid gray;
             margin-top: 1em;
@@ -17,7 +21,8 @@
             /* juntan las tablas se borran los espacios*/
         }
         
-        td {
+        td,
+        th {
             border: 1px solid gray;
             line-height: 1.7;
             text-align: center;
@@ -25,6 +30,10 @@
         
         tr:hover {
             background: #444;
+        }
+        
+        th {
+            background: peru;
         }
     </style>
 </head>
@@ -119,6 +128,93 @@
             <td>3</td>
             <td>4</td>
         </tr>
+    </table>
+
+    <!-- 
+        <th></th>: son cabeceras de columnas. van dentro del primer
+        <tr></tr> de ser necesario.
+    -->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>correo</th>
+        </tr>
+        <tr>
+            <td>Jordy</td>
+            <td>Tirado</td>
+            <td>jordy_unt@live.com</td>
+        </tr>
+    </table>
+
+    <!-- 
+        <thead></thead>: es la cabezera e incluye a los <th></th>
+        <tbody></tbody>: es el cuerpo e incluye a los datos
+        <tfoot></tfoot>: es el pie y debe ir antes del <tbody></tbody>
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Productos vendidos</th>
+                <th>Ingresos</th>
+                <th>Impuestos</th>
+                <th>Ganancias</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total</td>
+                <!-- colspan une filas-->
+                <td>S/8000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Enero</td>
+                <td>15</td>
+                <td>S/.2000</td>
+                <td>S/.500</td>
+                <td>S/.5000</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>15</td>
+                <td>S/.2000</td>
+                <td>S/.500</td>
+                <td>S/.5000</td>
+            </tr>
+            <tr>
+                <td>Marzo</td>
+                <td>15</td>
+                <td>S/.2000</td>
+                <td>S/.500</td>
+                <td>S/.5000</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>15</td>
+                <td>S/.2000</td>
+                <td>S/.500</td>
+                <td>S/.5000</td>
+            </tr>
+            <tr>
+                <td>Mayo</td>
+                <td>15</td>
+                <td>S/.2000</td>
+                <td>S/.500</td>
+                <td>S/.5000</td>
+            </tr>
+            <tr>
+                <td>Junio</td>
+                <td>15</td>
+                <td>S/.2000</td>
+                <td>S/.500</td>
+                <td>S/.5000</td>
+            </tr>
+        </tbody>
+
     </table>
 </body>
 

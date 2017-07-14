@@ -7,6 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Clase 5 aqui veremos listas y tablas">
     <title>Listas y tablas</title>
+
+    <style>
+        table {
+            border: 1px solid gray;
+            margin-top: 1em;
+            width: 100%;
+            border-collapse: collapse;
+            /* juntan las tablas se borran los espacios*/
+        }
+        
+        td {
+            border: 1px solid gray;
+            line-height: 1.7;
+            text-align: center;
+        }
+        
+        tr:hover {
+            background: #444;
+        }
+    </style>
 </head>
 
 <body>
@@ -69,6 +89,37 @@
             <dd>lenguaje de estilos</dd>
         </dl>
     </details>
+
+    <!-- 
+        Tablas
+
+        Las tablas se usan para mostrar datos en formato tabla
+        (filas y columnas, tipo hoja de calculo)
+        la etiqueta <table></table> es el contenedor de la tabla.
+        mientras que <tr></tr> es una fila y <td></td> es una celda
+        dentro de la fila.
+
+        <table></table> : contenedor de la tabla
+        <tr></tr>       : table-row, fila - horizontal
+        <td></td>       : table-data, aqui se insertan los datos
+    -->
+
+    <table>
+        <tr>
+            <td>Hola mundo</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
 </body>
 
 </html>

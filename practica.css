@@ -1,0 +1,53 @@
+body {
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    margin-bottom: 5em;
+}
+
+.letra {
+    letter-spacing: .5em;
+}
+
+.producto {
+    background: lightsteelblue;
+    width: 50%;
+    height: 120px;
+    padding: .5em;
+}
+
+#facebook {
+    background: peru;
+}
+
+table {
+    border-radius: 20px;
+    border: 1px solid #444;
+    width: 100%;
+    border-collapse: collapse;
+    color: #222;
+    box-sizing: border-box;
+}
+
+.celeste-claro {
+    background: steelblue;
+}
+
+.celeste-bajo {
+    background: darkcyan;
+}
+
+.flash10 {
+    border-left: 2px solid #fff;
+    padding-right: 1em;
+}
+
+td,
+th {
+    border: 1px solid rgb(255, 200, 230);
+    text-align: left;
+    padding-left: .4em;
+}
+
+.tabla-cabezera {
+    background: #222;
+    color: #fff;
+}

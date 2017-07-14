@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Imagenes en html">
+    <link rel="icon" href="favicon.png">
+    <title>Imagenes</title>
+
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Imagenes</h1>
+
+    <!-- 
+        tipo de imagenes
+        * Render: estan formadas por pixeles.
+                  existen 2 tipos de formato:
+                  - jpg, formato con perdida, ideales para fotografia.
+                  - png, formato sin perdida, admite transparencia y es ideal para
+                    logos, capturas de pantallas e imagenes como mucho color solido.
+                  - gif,formato con poca profundidad de color (256) admite transparencias y animaciones.
+                  
+        * Vectoriales: son codigo xml que el navegador
+                      interpreta al vuelo.
+    -->
+
+    <!-- 
+        la etiqueta <img src="" alt="">
+        - src: indica la ruta de la imagen
+        - alt: indica un texto alternativo para las ocasiones donde
+               no se muestra la imagen, para los motores de busqueda y
+               para los lectores de pantalla
+        
+        * siempre es recomendable colocar en el css ala img max-width: 100%;
+    -->
+
+    <!-- 
+        <figure></figure> sirve para encerrar elementos multimedia
+                          como imagenes o video acompañados de una leyenda
+                          con el elemento <figcaption></figcaption>
+    -->
+
+    <figure>
+        <img src="favicon.png" alt="favicon">
+        <figcaption>
+            el favicon
+        </figcaption>
+    </figure>
+
+    <!-- 
+        picture
+    -->
+
+    <picture>
+        <source srcset="kevin.jpg" media="(min-width:1000px)">
+        <source srcset="jesus.jpg" media="(min-width:600px)">
+        <img src="aguero.jpg" alt="Aguero" title="Aguero">
+    </picture>
+
+</body>
+
+</html>

@@ -15,6 +15,13 @@
     * mejor es usar la consola con mozilla firefox xq chrome guarda en cache y no actualiza bien
     -->
     <img srcset="1.jpeg 1280w, 2.jpeg 640w" src="1.jpeg" alt="">
+
+    <picture>
+        <source srcset="1.jpeg" media="(max-width:500px)">
+        <source srcset="2.jpeg" media="(min-width: 501px)">
+        <img src="1.jpeg" alt="imagen">
+    </picture>
+
 </body>
 
 </html>

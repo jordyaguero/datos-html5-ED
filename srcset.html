@@ -15,7 +15,6 @@
     * mejor es usar la consola con mozilla firefox xq chrome guarda en cache y no actualiza bien
     -->
     <img srcset="1.jpeg 1280w, 2.jpeg 640w" src="1.jpeg" alt="">
-<<<<<<< HEAD
 
     <picture>
         <source srcset="1.jpeg" media="(max-width:500px)">
@@ -23,8 +22,28 @@
         <img src="1.jpeg" alt="imagen">
     </picture>
 
-=======
->>>>>>> 94578b3f73bd9b3a936df88a1d24d61f583fa2fb
+    <!-- Selectores de atributos -->
+
+    <input type="name" title="uno" value="uno">
+    <input type="name" title="dos" value="dos">
+    <input type="name" title="uno" value="uno">
+
+    <style>
+        /* ^ comienzen con uno*/
+        
+        input[title^="uno"] {
+            color: white;
+        }
+        /* $ terminan con dos*/
+        
+        input[title$="dos"] {
+            color: red;
+        }
+        /* * contiene */
+        
+        input[href*="#"]
+    </style>
+
 </body>
 
 </html>

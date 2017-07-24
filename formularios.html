@@ -82,6 +82,33 @@
             camote <input type="checkbox" name="comida">                       
         </label>
 
+        <!--
+            el atributo multiple en select permite seleccionar varios campos
+            de la etiqueta select con la tecla control y selecccionado varios item
+        -->
+
+        <!-- 
+            para agrupar colocamos la etiqueta optgroup y label para su nombre
+            y encerramos los option
+
+            - el atributo size es para decirle cuantas lineas tendra la etiqueta select
+        -->
+        <label>
+            su país:
+            <select name="pais" id="pais">
+                <optgroup label="America">
+                    <option value="peru">Peru</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="inglaterra">Inglaterra</option>
+                    <option value="mexico">Mexico</option>
+                </optgroup>
+                
+            </select>
+        </label>
+
         <button>Enviar</button>
     </form>
 

@@ -54,7 +54,7 @@
         <input type="search">
         <input type="date">
         <input type="time">
-        <input type="number">
+        <input type="number" autofocus>
         <input type="checkbox">
         <input type="radio">
         <input type="color">
@@ -102,7 +102,7 @@
                     <option value="brasil">Brasil</option>
                 </optgroup>
                 <optgroup label="Europa">
-                    <option value="inglaterra">Inglaterra</option>
+                    <option value="inglaterra" selected>Inglaterra</option>
                     <option value="mexico">Mexico</option>
                 </optgroup>
                 
@@ -114,6 +114,33 @@
         -->
         <textarea rows="10" cols="30" maxlength="30" id="mensaje"></textarea>
 
+
+        <!-- 
+            atributos de los formularios:
+
+            Boolean
+            
+                * required
+                * disabled: hace que el campo este desactivado
+                * checked
+                * selected: hace que este por defecto seleccionado ese campo de un select
+                * multiple
+                * autofocus: permite que este en foco por defecto
+                * readonly: atributo solo lectura
+            
+            otros
+
+                * maxlength y minlength: minimo y maximo para caracteres
+                * min y max: minimo y maximo para numeros
+                * step: saltos para range
+                * autocomplete (formulario)
+
+        -->
+
+        atributos: <input required disabled> solo lectura: <input value="solo lectura" readonly>
+        <label>llamar:
+           <input type="tel" minlength="9" max="30">
+       </label>
         <button>Enviar</button>
     </form>
 

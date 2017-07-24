@@ -33,8 +33,56 @@
             <label for="">Su apellido</label>
             <input>
         </fieldset>
-        <button>Enviar</button>
 
+        <!-- 
+            hay 2 formas de que esten conectados el label y el input
+            * encerrando el input dentro de la etiqueta label
+            * colocando for en el label e id en el input con el mismo nombre 
+        -->
+
+        <!-- 
+            el unico problema con el placeholder es tener problemas con los estilos
+        -->
+
+        <label>Edad
+            <input placeholder="tu edad">
+        </label>
+        <input type="email">
+        <input type="url">
+        <input type="password">
+        <input type="tel">
+        <input type="search">
+        <input type="date">
+        <input type="time">
+        <input type="number">
+        <input type="checkbox">
+        <input type="radio">
+        <input type="color">
+        <input type="range" min="0" max="100" step="10" value="50">
+        <input type="file">
+        <input type="reset" value="Limpiar">
+        <!--
+              el <input type="reset">limpia todo lo llenado en el formulario-->
+        <!-- 
+            los radio no se pueden desactivar, solo se desactiva cuando
+            estan en un grupo osea con el mismo nombre
+        -->
+        <label style="display: block">Genero
+            <input type="radio" name="gener">
+            <input type="radio" name="gener">
+        </label>
+
+        <!--
+             checkbox pueden seleccionarse varios
+             el atributo checked selecciona por defecto
+        -->
+        <label style="display: block"> 
+            lechuga <input type="checkbox" name="comida" checked>
+            papa <input type="checkbox" name="comida"> 
+            camote <input type="checkbox" name="comida">                       
+        </label>
+
+        <button>Enviar</button>
     </form>
 
 </body>

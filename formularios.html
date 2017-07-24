@@ -109,9 +109,21 @@
             </select>
         </label>
 
+        <!-- 
+           el atributo maxlength nos indica el maximo de caracteres a escribir
+        -->
+        <textarea rows="10" cols="30" maxlength="30" id="mensaje"></textarea>
+
         <button>Enviar</button>
     </form>
 
+    <script>
+        let contador = 30;
+        document.getElementById('mensaje').addEventListener('keyup', function() {
+            contador--;
+            console.log("quedan " + contador + " contadores");
+        });
+    </script>
 </body>
 
 </html>

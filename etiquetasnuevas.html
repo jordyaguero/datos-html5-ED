@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>etiquetas nuevas</title>
+</head>
+
+<body>
+
+    <!-- 
+        * un progress vacio puede servir para saber que un archivo esta cargando
+        * un progress a un 50% no puede decir que se esta cargando un archivo y esta ala mitad
+    -->
+    <progress></progress>
+    <progress value="50" max="100"></progress>
+
+    <!--
+        meter: para mostrar medidas en rangos conocidos, tambien permite definir rangos
+               bajos(low), altos(high), y optimizados(optimus), cuando el medidor esta en
+               gama baja se muestra de color rojo, em gama media se muestra amarillo y optimizado en verde
+     -->
+
+    <meter min="0" max="10" low="3" high="7" optimum="9" value="0"></meter>
+    <meter min="0" max="10" low="3" high="7" optimum="9" value="1"></meter>
+    <meter min="0" max="10" low="3" high="7" optimum="9" value="4"></meter>
+    <meter min="0" max="10" low="3" high="7" optimum="9" value="7"></meter>
+    <meter min="0" max="10" low="3" high="7" optimum="9" value="10"></meter>
+</body>
+
+</html>
